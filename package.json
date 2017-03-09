@@ -1,0 +1,30 @@
+{
+  "name": "generate-date-list",
+  "version": "0.0.1",
+  "description": "Generates a simple list of dates. Useful for serving fixture date to interfaces.",
+  "main": "generate-date-list.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "steal": "^1.2.11",
+    "steal-mocha": "^1.0.0",
+    "steal-tools": "^1.1.2",
+    "testee": "^0.3.1"
+  },
+  "scripts": {
+    "testee": "testee test.html --browsers firefox",
+	"lint": "eslint ./ --ignore-pattern dist -c ./.eslintrc.json",
+	"test": "npm run lint && npm run testee",
+	"build": "npm run test && node build.js"
+  },
+  "keywords": [],
+  "author": "Juan Orozco <hi@juanorozco.com> (http://juanorozco.com)",
+  "license": "ISC",
+  "steal": {
+    "npmAlgorithm": "flat",
+	"map": {
+	  "chai": "chai/chai"
+	}
+  }
+}
