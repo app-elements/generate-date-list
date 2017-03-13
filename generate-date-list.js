@@ -11,8 +11,8 @@ export const generateIterator = function (incrementor, startDate) {
 };
 
 // Generate data list
-export default function (length, incrementor, startDate = new Date()) {
-	const iterator = generateIterator(incrementor, startDate);
+export default function (length, incrementor, startDate) {
+	const iterator = generateIterator(incrementor, new Date(startDate));
 	return Array.from(Array(length))
 		.map(iterator);
 }
