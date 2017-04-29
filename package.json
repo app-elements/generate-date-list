@@ -1,6 +1,6 @@
 {
   "name": "generate-date-list",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generates a simple list of dates. Useful for serving fixture date to interfaces.",
   "main": "generate-date-list.js",
   "dependencies": {},
